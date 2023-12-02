@@ -1,0 +1,14 @@
+{
+    "0":{
+        "name": "Aluminum Can",
+        "howtorecycle":"1. Remove any stickers or labels attached to the cans and wash them with water.\n2. Crush the cans to prevent foreign objects from entering and reduce the empty space as much as possible before disposing of them separately."
+    },
+    "1":{
+        "name": "Snack bags",
+        "howtorecycle":"1. Remove any stickers or tape from the snack bag and clean the inside of the bag of grease and food.\n2. Unfold the plastic and dispose of it separately."
+    },
+    "2":{
+        "name": "Clear Plastic Bottle",
+        "howtorecycle":"1. Remove stickers, labels, etc. from clear plastic bottles, wash them with water, crush them, and close the lids.\n2. Collect only clear plastic bottles and dispose of them separately."
+    }
+}

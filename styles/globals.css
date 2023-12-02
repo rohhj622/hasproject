@@ -1,0 +1,88 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&display=swap"); */
+@import url("https://use.typekit.net/ito1cob.css");
+
+@font-face { /* 애플산돌고딕 폰트 적용 */
+  font-family: "PTSerif";
+  src: url("fonts/NanumMyeongjo-Regular.woff") format("woff");
+} 
+
+@font-face {
+  font-family: "PTSerif";
+  src: url("fonts/PTSerif-Regular.woff") format("woff");
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@import "embla.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-pattern {
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+/* 글씨 긁었을 때 나오는 색*/
+::-moz-selection { 
+  /* Code for Firefox */
+  color: #f4f4f4;
+  background: #949494;
+}
+
+::selection {
+  color: #f4f4f4;
+  background: #949494;
+}
+
+.gradient-background {
+  /* background: linear-gradient(213deg, #b312dd, #ff4e58, #9222d4, #33c2d0); */
+  background: linear-gradient(213deg, #ececec, #949494);
+  background-size: 240% 240%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+.underlined {
+  position: relative;
+}
+
+.underlined::after {
+  content: "";
+  position: absolute;
+  bottom: -1.525rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 40px;
+  z-index: 0;
+
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+  background-repeat: no-repeat;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
